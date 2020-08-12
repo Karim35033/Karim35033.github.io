@@ -1,0 +1,126 @@
+body
+{
+    margin: 0;
+    padding: 0%;
+    font-family: 'poppins', sans-serif;
+
+}
+.header
+{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    
+}
+.header .video-background
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index : 1;
+}
+@media (min-aspect-ratio:16/9)
+{
+    .video-background
+        {
+            width: 200%;
+            height: auto;
+        }
+}
+@media (max-aspect-ratio:16/9)
+{
+    .video-background
+        {
+            width: auto;
+            height: 200%;
+        }
+}
+.header .content
+{
+    position: absolute;
+    z-index: 1;
+    margin: 15px;
+    height: 40%;   
+}
+.header .welcome-msg
+{
+    position: relative;
+    z-index: 1;
+    font-family: monospace;
+    color: rgb(31, 98, 221);
+    margin: 0 auto;  
+}
+.header .welcome-msg h1
+{
+    position: relative;
+    top: 8%;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header .form
+{
+    position: relative;
+    top:20%;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    text-align: center;
+    color:#fff;
+}
+.header .form label
+{   
+    font-family:monospace;
+    font-size:5em;
+}
+.header .form input
+{   
+    font-size:2em;
+    width: 20%;
+    height: 100%;
+    margin: 5px;
+    padding: 7px 7px;
+    border: 2px solid cornflowerblue;
+    border-radius: 25px;
+}
+.header .Envoyer
+{          
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width:100%; 
+    
+}
+.header .Envoyer input
+{   
+    margin: 5px;
+    padding: 7px 22px;
+    width: 21%;
+    color:darkred;
+    border: 2px solid cornflowerblue;
+    border-radius: 25px;
+    background-color: coral;
+}
+.Entête
+{
+    height: 0%;
+    overflow: hidden;
+    display: flex;
+    z-index: 1%;
+}
+
+.Entête .Text
+{
+    position: absolute;
+    z-index: 1;
+      
+}
